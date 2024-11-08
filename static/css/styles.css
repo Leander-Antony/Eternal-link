@@ -162,3 +162,54 @@ button {
     margin: 20px auto;
     display: block;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Body and intro adjustments for smaller screens */
+    .intro {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .btn-primary, .btn-success {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    #resultImage {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens (mobile phones) */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro {
+        padding: 15px;
+    }
+
+    .modal-content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .btn-primary, .btn-success {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+    }
+
+    #resultImage {
+        max-width: 150px;
+    }
+}

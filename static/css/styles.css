@@ -1,0 +1,164 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/bg.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Intro section */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+}
+
+.intro:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 30px;
+    color: #ff007f; /* Bright, mysterious pink */
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Container */
+.container {
+    text-align: center;
+}
+
+/* Modal dialog */
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Modal content */
+.modal-content {
+    justify-content: center;
+    background-color: #222; /* Darker background for deeper contrast */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    color: #fff;
+    transition: all 0.4s ease;
+    border: 2px solid #ff007f;
+}
+
+/* Animate the modal's appearance */
+.modal-content {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Modal header */
+.modal-header {
+    border-bottom: none;
+    color: #ff007f;
+}
+
+/* Close button styling */
+.btn-close {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+/* Form controls */
+.form-control {
+    margin-bottom: 20px;
+    background-color: #444; /* Darker input background */
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #ff007f;
+    box-shadow: 0 0 8px rgba(255, 0, 127, 0.8);
+}
+
+/* Primary button styling */
+.btn-primary {
+    background-color: #ff007f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff1a8c;
+    transform: translateY(-3px);
+}
+
+/* Success button */
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+}
+
+/* Adjust button padding */
+button {
+    padding: 10px 20px;
+}
+
+/* Image inside modal */
+#resultImage {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+}

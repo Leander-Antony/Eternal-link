@@ -58,7 +58,7 @@ def flames_game(name1, name2):
     return result[0]
 
 
-@app.route('/download', methods=['GET'])
+@app.route('/never', methods=['GET'])
 def download_data():
     """
     Endpoint to download user inputs data as CSV.

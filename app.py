@@ -96,6 +96,8 @@ def submit():
     name1 = request.form['name1']
     name2 = request.form['name2']
     duration = request.form['duration']
+    someone_else = request.form['love']
+    side = request.form['sided']
 
     result = flames_game(name1, name2)
 
@@ -104,6 +106,8 @@ def submit():
         'name2': name2,
         'duration': duration,
         'relationship_status': result,
+        'cheating': someone_else,
+        'side': side,
     }
 
     data_collection.insert_one(user_input_data)
